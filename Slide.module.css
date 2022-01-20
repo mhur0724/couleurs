@@ -1,0 +1,41 @@
+.slide {
+  width: 100vw;
+  height: calc(100vh - 4rem - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+.info-container {
+  flex: 1;
+  padding: 50px;
+}
+
+.title {
+  font-size: 70px;
+}
+
+.description {
+  margin: 50px 0px;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.button {
+  padding: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
