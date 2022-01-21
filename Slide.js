@@ -1,17 +1,28 @@
 import React from "react";
 import classes from "./Slide.module.css";
+import { useNavigate } from "react-router-dom";
 
-const Slide = ({ img, title, description, button, backgroundColor }) => {
+const Slide = ({ image, title, description, button, backgroundColor, nav }) => {
+  const navigate = useNavigate();
+
   return (
-    <div className={classes.slide} style={{ backgroundColor: backgroundColor }}>
-      <div className={classes["img-container"]}>
-        <img src={img} alt="" />
-      </div>
-
-      <div className={classes["info-container"]}>
-        <h1 className={classes.title}>{title.toUpperCase()}</h1>
-        <p className={classes.description}>{description.toUpperCase()}</p>
-        <button className={classes.button}>{button.toUpperCase()}</button>
+    <div className={classes.container}>
+      <div className={classes.wrapper}>
+        <div className={classes["img-container"]}>
+          <img src={image} alt="" />
+        </div>
+        <div className={classes.overlay}>
+          <h1>{title.toUpperCase()}</h1>
+          <p>{description.toUpperCase()} </p>
+          <button
+            style={{ backgroundColor: backgroundColor }}
+            onClick={() => {
+              navigate(nav);
+            }}
+          >
+            {button.toUpperCase()}
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -23,11 +23,12 @@ const Slider = () => {
   const slideItems = slides.map((slideItem) => (
     <Slide
       key={slideItem.id}
-      img={slideItem.img}
+      image={slideItem.img}
       title={slideItem.title}
       description={slideItem.description}
       button={slideItem.button}
       backgroundColor={slideItem.backgroundColor}
+      nav={slideItem.nav}
     />
   ));
 

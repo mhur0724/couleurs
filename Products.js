@@ -8,6 +8,7 @@ const Products = () => {
     <>
       <div className={classes["best-sellers"]}>
         <h2>Best Sellers</h2>
+        <p>You Spoke. We Listened.</p>
       </div>
       <div className={classes.container}>
         {products.map((product) => (

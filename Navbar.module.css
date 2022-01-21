@@ -10,7 +10,7 @@
 }
 
 .left {
-  flex: 1;
+  display: flex;
 }
 
 .search__container {
@@ -21,16 +21,9 @@
   padding: 5px;
 }
 
-.input {
-  border: none;
-}
-.input:focus {
-  outline: none;
-}
-
 .center {
-  flex: 2;
-  text-align: center;
+  flex-grow: 2;
+  flex-shrink: 0;
 }
 
 .logo {

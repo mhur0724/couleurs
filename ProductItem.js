@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./ProductItem.module.css";
+
 const ProductItem = ({ image, product, price }) => {
+  const [isFavorite, setIsFavorite] = useState(false);
+
   return (
     <div className={classes.container}>
       <div className={classes["image-container"]}>
@@ -9,6 +12,12 @@ const ProductItem = ({ image, product, price }) => {
       <div className={classes["product-info"]}>
         <p>{product}</p>
         <p>{price}</p>
+        <div className={classes.icons}>
+          <div
+            className={classes.favorite}
+            onClick={() => setIsFavorite(!isFavorite)}
+          ></div>
+        </div>
       </div>
     </div>
   );

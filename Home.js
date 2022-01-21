@@ -1,18 +1,18 @@
 import React from "react";
-import Announcement from "./Announcement";
 import Categories from "./Categories";
-import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Looks from "./Looks";
 import Products from "./Products";
 import Slider from "./Slider";
 
 const Home = () => {
   return (
     <div>
-      <Announcement />
-      <Navbar />
       <Slider />
-      <Categories />
       <Products />
+      <Categories />
+      <Looks />
+      <Footer />
     </div>
   );
 };

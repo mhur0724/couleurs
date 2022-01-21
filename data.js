@@ -1,7 +1,4 @@
 import {
-  carsonImg,
-  girlImg,
-  joey2Img,
   storeImg,
   lookbookImg,
   graphicsImg,
@@ -13,42 +10,43 @@ import {
   shortsImg,
   colorfulHoodieImg,
   bwHoodieImg,
+  look1Img,
+  look2Img,
+  look3Img,
+  look4Img,
+  frontImg,
+  graphicsbackground,
+  slide3background,
 } from "./Images.js";
 
 export const slides = [
   {
     id: 1,
-    img: carsonImg,
+    img: frontImg,
     title: "THE COULEURS MISSION",
     description:
       "Producing aesthetically pleasing products for anyone and everyone.",
-    button: "About Us",
-    backgroundColor: "#fcf1ed",
+    button: "Shop Now",
+    backgroundColor: "#9e74d0",
+    nav: "/store",
   },
   {
     id: 2,
-    img: joey2Img,
-    title: "1 is the loneliest number",
-    description: `I told my parents about us.`,
-    button: "SHOP NOW",
-    backgroundColor: "#ffecd9",
+    img: slide3background,
+    title: "We look good together ;)",
+    description: "",
+    button: "Lookbook",
+    backgroundColor: "#ff6991",
+    nav: "/lookbook",
   },
   {
     id: 3,
-    img: joey2Img,
+    img: graphicsbackground,
     title: `WE'RE NOT JUST A PRETTY FACE`,
-    description: `check out our graphics collection`,
+    description: `Check out our graphics collection`,
     button: "GRAPHICS",
-    backgroundColor: "#f5fafd",
-  },
-  {
-    id: 4,
-    img: girlImg,
-    title: `You've never looked better`,
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti quaerat nobis! Sit quia harum nesciunt ipsum. Asperiores, reprehenderit soluta!",
-    button: "Lookbooks",
-    backgroundColor: "#f5fafd",
+    backgroundColor: "#77dd77",
+    nav: "/graphics",
   },
 ];
 
@@ -56,17 +54,20 @@ export const categories = [
   {
     id: 1,
     img: storeImg,
-    title: "STORE",
+    nav: "/store",
+    button: "STORE",
   },
   {
     id: 2,
     img: graphicsImg,
-    title: "GRAPHICS",
+    nav: "/graphics",
+    button: "GRAPHICS",
   },
   {
     id: 3,
     img: lookbookImg,
-    title: "LOOKBOOKS",
+    nav: "/lookbook",
+    button: "LOOKBOOKS",
   },
 ];
 
@@ -118,5 +119,24 @@ export const products = [
     img: bwHoodieImg,
     product: "Hoodie",
     price: "$70.00",
+  },
+];
+
+export const looks = [
+  {
+    id: 1,
+    img: look1Img,
+  },
+  {
+    id: 2,
+    img: look2Img,
+  },
+  {
+    id: 3,
+    img: look3Img,
+  },
+  {
+    id: 4,
+    img: look4Img,
   },
 ];

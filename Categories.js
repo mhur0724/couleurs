@@ -6,7 +6,12 @@ const Categories = () => {
   return (
     <div className={classes.container}>
       {categories.map((item) => (
-        <CategoryItem key={item.id} image={item.img} title={item.title} />
+        <CategoryItem
+          key={item.id}
+          image={item.img}
+          nav={item.nav}
+          button={item.button}
+        />
       ))}
     </div>
   );
