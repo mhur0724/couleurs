@@ -71,6 +71,38 @@ export const categories = [
   },
 ];
 
+const description = [
+  {
+    crewneck: {
+      bullet1: "Regular Fit",
+      bullet2: "Crew Neck",
+      bullet3: "Mid weight, 5.3 oz/yd2, 24-singles",
+      bullet4: "100% combed organic cotton",
+      bullet5:
+        "Quality cotton grown without the use of herbicides or pesticides - GOTS (Global Organic Textile Standard) certified",
+      bullet6:
+        "Neck ribbing with twin needle stitch, ribbed cuff, split hem, side seamed, shoulder to shoulder tape, double needle hems, preshrunk to minimize shrinkage",
+    },
+    hoodie: {
+      bullet1: "10 oz (330 gm) cotton/polyester blend 3-end fleece",
+      bullet2: "Ring spun cotton",
+      bullet3:
+        "Solid Colors: 70% Cotton/30% Polyester with 100% cotton 32 singles face yarn for supreme printability and softness",
+      bullet4: "Fleece lined hood",
+      bullet5: "split stitch double needle sewing on all seams",
+      bullet6: "Twill neck tape",
+      bullet7: "1x1 ribbing at cuffs and waistband",
+    },
+    shirt: {
+      bullet1: "100% ringspun cotton",
+      bullet2: "preshrunk, soft-washed, garment-dyed fabric",
+      bullet3: "twill taped shoulder-to-shoulder",
+      bullet4: "set-in sleeves",
+      bullet5: "double-needle stitched sleeves and bottom hem",
+      bullet6: '1" ribbed collar with double-needle topstitched neckline',
+    },
+  },
+];
 export const bestSellers = [
   {
     id: 1,
@@ -78,6 +110,9 @@ export const bestSellers = [
     product: "Crewneck",
     price: "$45.00",
     nav: "/best-sellers/crewnecks",
+    sizing: "Fits true to size",
+    care: "Machine wash cold, hang dry for increased longevity",
+    description: description.crewneck,
   },
   {
     id: 2,
@@ -99,6 +134,9 @@ export const bestSellers = [
     product: "Hoodie",
     price: "$60.00",
     nav: "/best-sellers/hoodie",
+    sizing: "Fits true to size",
+    care: "Machine wash cold, hang dry for increased longevity",
+    description: description.hoodie,
   },
   {
     id: 5,
@@ -106,6 +144,9 @@ export const bestSellers = [
     product: "Shirt",
     price: "$25.00",
     nav: "/best-sellers/shirt",
+    sizing: "Fits true to size",
+    care: "Machine wash cold, hang dry for increased longevity",
+    description: description.shirt,
   },
   {
     id: 6,
@@ -120,6 +161,9 @@ export const bestSellers = [
     product: "Colorful Hoodie",
     price: "$70.00",
     nav: "/product/colorful-hoodie",
+    sizing: "Fits true to size",
+    care: "Machine wash cold, hang dry for increased longevity",
+    description: description.hoodie,
   },
   {
     id: 8,
@@ -127,6 +171,9 @@ export const bestSellers = [
     product: "Hoodie",
     price: "$70.00",
     nav: "/product/hoodie",
+    sizing: "Fits true to size",
+    care: "Machine wash cold, hang dry for increased longevity",
+    description: description.hoodie,
   },
 ];
 
