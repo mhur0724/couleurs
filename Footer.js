@@ -1,6 +1,8 @@
-import { Facebook, Instagram, MailOutline, Send } from "@mui/icons-material";
+import { Facebook, Instagram, Send } from "@mui/icons-material";
 import React from "react";
 import classes from "./Footer.module.css";
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className={classes.container}>
@@ -28,7 +30,7 @@ const Footer = () => {
             <strong>Company</strong>
           </p>
           <div>
-            <a href="#">FAQ</a>
+            <Link to="/FAQ">FAQ</Link>
           </div>
         </li>
         <li className={`${classes.connect} ${classes["footer__li"]}`}>

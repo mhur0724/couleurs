@@ -60,10 +60,12 @@ img {
 }
 
 .overlay h1 {
-  font-size: 4rem;
+  font-size: clamp(1rem, 4rem, 2.75rem);
+  max-width: 75%;
 }
 
 .overlay p {
-  font-size: 2rem;
+  font-size: clamp(0.5rem, 2rem, 1.5rem);
+
   max-width: 75%;
 }

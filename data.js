@@ -71,54 +71,62 @@ export const categories = [
   },
 ];
 
-export const products = [
+export const bestSellers = [
   {
     id: 1,
     img: crewnecksImg,
     product: "Crewneck",
     price: "$45.00",
+    nav: "/best-sellers/crewnecks",
   },
   {
     id: 2,
     img: hatImg,
     product: "Hat",
     price: "$20.00",
+    nav: "/best-sellers/hat",
   },
   {
     id: 3,
     img: toteImg,
     product: "Tote",
     price: "$30.00",
+    nav: "/best-sellers/tote",
   },
   {
     id: 4,
     img: hoodieImg,
     product: "Hoodie",
     price: "$60.00",
+    nav: "/best-sellers/hoodie",
   },
   {
     id: 5,
     img: shirtImg,
     product: "Shirt",
     price: "$25.00",
+    nav: "/best-sellers/shirt",
   },
   {
     id: 6,
     img: shortsImg,
     product: "Shorts",
     price: "$35.00",
+    nav: "/best-sellers/shorts",
   },
   {
     id: 7,
     img: colorfulHoodieImg,
     product: "Colorful Hoodie",
     price: "$70.00",
+    nav: "/product/colorful-hoodie",
   },
   {
     id: 8,
     img: bwHoodieImg,
     product: "Hoodie",
     price: "$70.00",
+    nav: "/product/hoodie",
   },
 ];
 

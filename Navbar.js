@@ -11,7 +11,9 @@ const Navbar = () => {
     <div className={classes.container}>
       <div className={classes.wrapper}>
         <div className={classes.left}>
-          <div className={classes["menu-item"]}>STORE</div>
+          <div className={classes["menu-item"]}>
+            <Link to="/store">STORE</Link>
+          </div>
           <div className={classes["menu-item"]}>
             <Link to="/graphics">GRAPHICS</Link>
           </div>

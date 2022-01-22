@@ -1,28 +1,23 @@
 .container {
   height: 4rem;
+  background-color: #f8f0e3;
 }
 
 .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 10px 20px;
 }
 
-.left {
-  display: flex;
+.wrapper > * {
+  flex: 1;
 }
-
-.search__container {
-  display: flex;
-  align-items: center;
-  border: 0.5px solid lightgray;
-  margin-left: 0.5rem;
-  padding: 5px;
+.left {
+  display: none;
 }
 
 .center {
-  flex-grow: 2;
   flex-shrink: 0;
 }
 
@@ -32,8 +27,7 @@
 }
 
 .right {
-  flex: 1;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: flex-end;
 }
@@ -42,4 +36,15 @@
   font-size: 14px;
   cursor: pointer;
   margin-left: 25px;
+}
+
+.menu-item:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 750px) {
+  .left,
+  .right {
+    display: flex;
+  }
 }
