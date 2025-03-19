@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import classes from "./Navbar.module.css";
 import logo from "../images/logo.png";
 import Badge from "@mui/material/Badge";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { PersonOutline, Search } from "@mui/icons-material";
 import { Link } from "react-router-dom";
+import CartContext from "../CartPage/cart-context";
 
-const Navbar = () => {
+const Navbar = ({ cartCount, setCartCount }) => {
+  const navigate = useNavigate();
+  const cartCtx = useContext(CartContext);
+
+  const numberofCartItems = cartCtx.items.reduce((curNumber, item) => {
+    return curNumber + item.amount;
+  }, 0);
+
   return (
     <div className={classes.container}>
       <div className={classes.wrapper}>
@@ -33,8 +42,13 @@ const Navbar = () => {
           <div className={classes["menu-item"]}>
             <PersonOutline />
           </div>
-          <div className={classes["menu-item"]}>
-            <Badge badgeContent={4} color="primary">
+          <div
+            className={classes["menu-item"]}
+            onClick={() => {
+              navigate("/cart");
+            }}
+          >
+            <Badge badgeContent={numberofCartItems} color="primary">
               <ShoppingCartOutlinedIcon />
             </Badge>
           </div>

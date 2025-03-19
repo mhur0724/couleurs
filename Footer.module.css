@@ -30,6 +30,7 @@
 
 .connect__icons {
   display: flex;
+  justify-content: center;
 }
 
 form {
